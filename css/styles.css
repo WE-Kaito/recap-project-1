@@ -1,0 +1,44 @@
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+html{
+    position: relative; 
+
+}
+
+body {
+
+    background-color: aquamarine;
+    
+}
+
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: goldenrod;
+    text-align: center;
+
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    padding: 1.5%;
+    top: 0px;
+}
+
+
+
+main {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: blueviolet;
+    position: fixed;
+    width: 100%;
+    padding: 1%;
+    bottom: 0px;
+}
