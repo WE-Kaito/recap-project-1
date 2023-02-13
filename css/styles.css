@@ -12,22 +12,27 @@ html{
 }
 
 body {
-
-    background-color: aquamarine;
-    
+    background-color: ghostwhite;
 }
 
 header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: goldenrod;
-    text-align: center;
+    position: fixed;
 
-    background-color: blue;
+    background-color: rgb(91, 74, 124);
     position: fixed;
     width: 100%;
     padding: 1.5%;
     top: 0px;
 }
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: goldenrod;
+    text-align: center;
+    font-size: 4.5vw;
+}
+
+
 
 
 
@@ -36,9 +41,37 @@ main {
 }
 
 footer {
-    background-color: blueviolet;
+    position: fixed;
+
+    background-color: rgb(183, 96, 164);
     position: fixed;
     width: 100%;
     padding: 1%;
     bottom: 0px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+.current {
+    filter:drop-shadow(0px 0px 10px whitesmoke);
+    transform: scale(90%);
+}
+
+a>img{
+    width: 5vw;
+}
+a>img:hover{
+    filter: drop-shadow(0px 0px 8px #058fa4b4);
+}
+a>img:active{
+    filter: drop-shadow(0px 0px 3px #06b517b4);
 }
