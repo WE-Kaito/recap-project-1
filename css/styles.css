@@ -17,17 +17,21 @@ body {
 
 header{
     position: fixed;
+    z-index: 2;
 
     background-color: rgb(91, 74, 124);
-    position: fixed;
     width: 100%;
     padding: 1.5%;
     top: 0px;
+
+    border: 0.8vw solid rgb(18, 35, 70);
+    box-shadow: inset 0 0 5px rgb(18, 35, 70);
+    filter: drop-shadow(0 0 3px rgb(18, 35, 70));
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: goldenrod;
+    color: white;
     text-align: center;
     font-size: 4.5vw;
 }
@@ -35,19 +39,134 @@ h1 {
 
 
 
+/* Question Cards -------------------------- */
 
 main {
-    background-color: blueviolet;
+    position: relative;
+    top: 180px;
+    height: 100%;
 }
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 300px;
+}
+
+section{
+    border: 0.8vw solid rgb(18, 35, 70);
+    box-shadow: inset 0 0 5px rgb(18, 35, 70);
+    filter: drop-shadow(0 0 3px rgb(18, 35, 70));
+    background: linear-gradient(343deg, rgb(67, 57, 66) 0%, rgb(201, 188, 188) 100%);
+
+    border-radius: 1.5vw;
+
+    width: 75vw;
+    margin-bottom: 8vw;
+
+    max-width: 900px;
+}
+
+section:hover{
+    transform: scale(110%);
+}
+
+article {
+    z-index: 1;
+
+    text-align: center;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+    font-size: 27px;
+    font-weight: lighter;
+    color: palegoldenrod;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding: 10% 12%;
+}
+
+section > button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    background-color: ghostwhite;
+    border-style: dashed;
+    box-shadow: 0 0 1px gray;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+section > button:hover{
+    background-color: rgb(212, 205, 178);
+    color: white;
+}
+section > button:active{
+    background-color: hotpink;
+    color: white;
+}
+
+section > ul {
+    position: relative;
+    list-style: none;
+    transform: translate(-25px);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top:3vw;
+    margin-bottom:2vw;
+}
+
+section > ul > li {
+    background-color: rgb(206, 205, 205);
+    padding: 0.4vw;
+
+    border: inset snow;
+
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: clip;
+    
+}
+
+
+img[alt=cardbookmark] {
+    position: absolute;
+    width: 7vw;
+
+    max-width: 65px;
+    right: 0px;
+
+    filter: contrast(0%) brightness(1000%) drop-shadow(0 0 1px rgb(67, 19, 36))
+}
+
+.currentCard {
+
+}
+
+/* Nav-Bar -------------------------- */
 
 footer {
     position: fixed;
+    z-index: 2;
 
     background-color: rgb(183, 96, 164);
     position: fixed;
     width: 100%;
     padding: 1%;
     bottom: 0px;
+
+    box-shadow: inset 0 0 5px rgb(18, 35, 70);
+    filter: drop-shadow(0 0 3px rgb(18, 35, 70));
 }
 nav{
     display: flex;
@@ -62,12 +181,13 @@ nav > ul{
 }
 
 .current {
-    filter:drop-shadow(0px 0px 10px whitesmoke);
-    transform: scale(90%);
+    filter:drop-shadow(0px 0px 8px whitesmoke);
+    transform: scale(80%) translate(-45%);
 }
 
 a>img{
-    width: 5vw;
+    width: 50px;
+    transform: translate(-45%);
 }
 a>img:hover{
     filter: drop-shadow(0px 0px 8px #058fa4b4);
