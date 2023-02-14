@@ -23,6 +23,10 @@ header{
     width: 100%;
     padding: 1.5%;
     top: 0px;
+
+    border: 0.8vw solid rgb(18, 35, 70);
+    box-shadow: inset 0 0 5px rgb(18, 35, 70);
+    filter: drop-shadow(0 0 3px rgb(18, 35, 70));
 }
 
 h1 {
@@ -39,7 +43,7 @@ h1 {
 
 main {
     position: relative;
-    top: 150px;
+    top: 180px;
     height: 100%;
 }
 
@@ -48,7 +52,7 @@ div{
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 section{
@@ -60,8 +64,9 @@ section{
     border-radius: 1.5vw;
 
     width: 75vw;
-    max-width: 500px;
     margin-bottom: 8vw;
+
+    max-width: 900px;
 }
 
 section:hover{
@@ -159,6 +164,9 @@ footer {
     width: 100%;
     padding: 1%;
     bottom: 0px;
+
+    box-shadow: inset 0 0 5px rgb(18, 35, 70);
+    filter: drop-shadow(0 0 3px rgb(18, 35, 70));
 }
 nav{
     display: flex;
